@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="http://smashcash.io/css/core.css" type="text/css" rel="stylesheet" />	
+	<!-- <link href="../fonts.googleapis.com/css805c.css?family=Montserrat:400,600,700|PT+Sans+Caption:400,700&amp;display=swap" type="text/css" rel="stylesheet" /> -->
+	<link href="http://smashcash.io/css/template.css" type="text/css" data-template-style="true" rel="stylesheet" />
+	<title>Smash Cash</title>
+ 	<style>
+ 		.loader_div{
+  position: absolute;
+  top: 0;
+  bottom: 0%;
+  left: 0;
+  right: 0%;
+  z-index: 99;
+  opacity:0.7;
+  display:none;
+  background: lightgrey url('http://smashcash.io/gifImagelo.gif') center center no-repeat;
+}
+/*body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+/*.modal {
+  display: none; /* Hidden by default 
+ / position: fixed; /* Stay in place 
+  z-index: 1; /* Sit on top 
+  padding-top: 100px; /* Location of the box 
+  left: 0;
+  top: 0;
+  width: 100%;  Full width 
+  height: 100%; /* Full height 
+  overflow: auto; /* Enable scroll if needed 
+  background-color: rgb(0,0,0);  Fallback color 
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity 
+}*/
+
+/* Modal Content */
+/*.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}*/
+
+/* The Close Button */
+/*.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}*/
+</style> 
+</head>
+<div id="loader_div" class="loader_div"></div>
+<body>
+	<header class="header-section js-animate-control">
+		<div class="g-wr">
+			<div class="header-row">
+				<div class="logo-col">
+					<div class="logo from-left ap-1">
+						<a class="logo__link" href="index.html">
+							<img src="http://smashcash.io/images/logo.png">
+						</a>
+					</div>
+				</div>
+				<nav class="nav-col nav">
+					<ul class="nav-container">
+						<li class="nav-item">
+							<label class="nav-item__link from-right ap-2 ">Services</label>
+							
+						</li>
+						<li class="nav-item"> <a href="#" class="nav-item__link from-right ap-10 "> Products </a> 
+						</li>
+						<li class="nav-item"> <a href="#" class="nav-item__link from-right ap-12 "> Cases </a> 
+						</li>
+						<li class="nav-item"> <a href="#" class="nav-item__link from-right ap-14 "> About </a> 
+						</li>
+						<li class="nav-item"> <a href="#" class="nav-item__link from-right ap-16 "> Contacts </a> 
+						</li>
+					</ul>
+				</nav>
+				<div class="lang-col">
+					<div class="lang-switch"> <span class="lang-switch__link lang-switch__link_active from-bottom ap-12">EN</span> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<label class="mobile-menu__link hide-desktop">
+		<svg class="i-menu_icon" viewBox="0 0 19 19" width="19px" height="19px" xmlns:xlink="../www.w3.org/1999/xlink.html">
+			<circle class="menu-close-top" cx="9.5" cy="1.5" r="1.5" fill="currentColor" />
+			<circle class="menu-close-left" cx="1.5" cy="9.5" r="1.5" fill="currentColor" />
+			<circle class="menu-close-right" cx="17.5" cy="9.5" r="1.5" fill="currentColor" />
+			<circle class="menu-close-bottom" cx="9.5" cy="17.5" r="1.5" fill="currentColor" />
+			<circle cx="1.5" cy="1.5" r="1.5" fill="currentColor" />
+			<circle cx="17.5" cy="1.5" r="1.5" fill="currentColor" />
+			<circle cx="9.5" cy="9.5" r="1.5" fill="currentColor" />
+			<circle cx="1.5" cy="17.5" r="1.5" fill="currentColor" />
+			<circle cx="17.5" cy="17.5" r="1.5" fill="currentColor" />
+		</svg>
+	</label>
+	<div class="mobile-menu hide-desktop">
+		<div class="mobile-menu__container">
+			<div class="g-wr">
+				<div class="mobile-nav">
+					<div class="mobile-lang hide-desktop">
+						<div class="lang-switch">  <span class="lang-switch__link lang-switch__link_active from-bottom ap-12">EN</span> 
+						</div>
+					</div>
+					<nav class="nav-col nav">
+						<ul class="nav-container">
+							<li class="nav-item">
+								<label class="nav-item__link from-right ap-2 ">Services</label>
+							
+							</li>
+							<li class="nav-item"><a class="nav-item__link from-right ap-4 " href="products/index.html"> Products </a>
+							</li>
+							<li class="nav-item"><a class="nav-item__link from-right ap-4 " href="cases/index.html"> Cases </a>
+							</li>
+							<li class="nav-item"><a class="nav-item__link from-right ap-4 " href="about/index.html"> About </a>
+							</li>
+							<li class="nav-item"><a class="nav-item__link from-right ap-4 " href="contacts/index.html"> Contacts </a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="mobile-menu__contacts">
+					<div class="contacts__tel"> <a href="#">+1 (437) 889 0930</a> 
+					</div>
+					<div class="contacts__mail"> <a href="#">smashcash</a> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="slide g-section app-section selected active animate">
+		<div class="content">
+				<div class="container">
+					<div class="g-wr g-max-wr g-pad-wr">
+						<div class="hero">
+							<div class="another-title g-border-text">
+								<div data-parallax="150">BUY SMASH CASH</div>
+							</div>
+						</div>
+						<div class="full-row col-sm-12">
+							<div class="pop-msg">
+								<p><span><img src="http://smashcash.io/images/icon1.png" alt=""><span>Smashcash was audited. However, it is still an experimental software. Please use at your own risk.<a href="#"><img src="http://smashcash.io/images/close-icon.png"></a></p>
+							</div>
+						</div>								
+						<div class="row m-0">
+							<div class="col-sm-6">
+								<div class="app-left-view tab-top">
+								<ul class="nav nav-tabs" id="myTab" role="tablist">
+									  <li class="nav-item" role="presentation">
+									    <button class="nav-link deposit active" id="deposit-tab" data-toggle="tab" data-target="#deposit" type="button" role="tab" aria-controls="deposit" aria-selected="true">Deposit</button>
+									  </li>
+									  <li class="nav-item" role="presentation">
+									    <button class="nav-link withdraw" id="withdraw-tab" data-toggle="tab" data-target="#withdraw" type="button" role="tab" aria-controls="withdraw" aria-selected="false">Withdraw</button>
+									  </li>
+									</ul>
+									<div class="tab-content" id="myTabContent">
+									  <div class="tab-pane fade show active" id="deposit" role="tabpanel" aria-labelledby="deposit-tab">
+									  	<div class="inner-deposit">
+									  		<div class="deposit-select">
+									  			<label for="exampleInputEmail1">Token</label>
+										  		<select class="form-select" aria-label="Default select example">
+												  <option selected value="MATIC">MATIC</option>
+												  <!-- <option value="MATIC">MATIC</option> -->
+												  <!-- <option value="2">cDAI</option>
+												  <option value="3">USDC</option>
+												  <option value="2">USDT</option>
+												  <option value="3">WBTC</option> -->
+												</select>
+										  	</div>
+										  	<div class="amout-circle">
+										  		<p>Amount</p>
+										  		<ul>
+										  			<li class="one-data active">
+										  				<div class="amout-round">
+										  					<p class="amout-p"><span>0.1</span><br> <span class="changeValEB">MATIC</span></p>
+										  				</div>
+										  			</li>
+										  			<li class="one-data two">
+										  				<div class="amout-round">
+										  					<p class="amout-p"><span>1</span><br> <span class="changeValEB">MATIC</span></p>
+										  				</div>
+										  			</li>
+										  			<li class="one-data three">
+										  				<div class="amout-round">
+										  					<p class="amout-p"><span>10</span><br> <span class="changeValEB">MATIC</span></p>
+										  				</div>
+										  			</li>
+										  			<li class="one-data four">
+										  				<div class="amout-round">
+										  					<p class="amout-p"><span>100</span><br> <span class="changeValEB">MATIC</span></p>
+										  				</div>
+										  			</li>
+										  			<li class="one-data five">
+										  				<div class="amout-round">
+										  					<p class="amout-p"><span>500</span><br> <span class="changeValEB">MATIC</span></p>
+										  				</div>
+										  			</li>
+										  		</ul>
+										  	</div>
+										  	<div class="conent-btn">
+										  		<a href="#" id="connectedMd" onclick="deposit()">Deposit</a>
+										  		<a href="#" class="enableEthereumButton" id="connectedM">Connect to MetaMask</a>
+										  	</div>
+										  	<div class="eth-rst">
+										  		<p>Smashcash.io</p>
+										  	</div>
+										  </div>
+									  </div>
+									  <div class="tab-pane fade" id="withdraw" role="tabpanel" aria-labelledby="withdraw-tab">
+									  	<div class="withdraw-inner">
+									  		<div class="form-group">
+											    <label for="exampleInputEmail1">Secret</label>
+											    <input type="email" class="form-control" id="exampleInputSecret" aria-describedby="emailHelp" placeholder="Secret note">
+											</div>
+											<div class="form-group">
+											    <label for="exampleInputEmail1">Recipient address</label>
+											    <input type="email" class="form-control" id="exampleInputrecipient" aria-describedby="emailHelp" placeholder="recipient address">
+											</div>
+											<div class="conent-btn">
+										  		<a href="#" onclick="withdraw()">Withdraw</a>
+										  	</div>
+									  	</div>
+									  </div>
+									</div>
+								</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="app-right-view tab-top">
+										<h2>Statistics</h2>
+										<div class="app-right-inner">
+											<div class="right-inner-first">
+												<div class="inner-first-left mt-4">
+													<p>Anonymity set</p>
+													<p>	9410 equal user deposits</p>
+													<p>	Latest deposits</p>
+												 </div>
+												 <div class="inner-first-right">
+													<div class="right-circle">
+														<span>1<br>ETH</span>
+													</div>
+												 </div>
+												</div>
+												<div class="right-inner-second">
+													<h4>Latest deposits</h4>
+													<div class="row">
+														<div class="col-sm-6">
+															<div class="bg-text">12334.10 hours ago</div>
+														</div>
+														<div class="col-sm-6">
+															<div class="bg-text">12334.10 hours ago</div>
+														</div>
+														<div class="col-sm-6">
+															<div class="bg-text">12334.10 hours ago</div>
+														</div>
+														<div class="col-sm-6">
+															<div class="bg-text">12334.10 hours ago</div>
+														</div>
+														<div class="col-sm-6">
+															<div class="bg-text">12334.10 hours ago</div>
+														</div>
+														<div class="col-sm-6">
+															<div class="bg-text">12334.10 hours ago</div>
+														</div>
+														<div class="col-sm-6">
+															<div class="bg-text">12334.10 hours ago</div>
+														</div>
+														<div class="col-sm-6">
+															<div class="bg-text">12334.10 hours ago</div>
+														</div>
+													</div>
+												</div>
+												<div class="right-inner-last">
+													<p>Your IP <span>169.149.225.70, Shimla, IN</span></p>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!-- The Modal -->
+<div id="myModalForNote" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content"> Your note:
+    <span class="close">&times;</span>
+	<input type="text" value="Your Note" id="yourNotedCopy">
+	<button onclick="myFunction()">Copy Note</button>
+  </div>
+
+</div>
+
+	<footer class="footer">
+		<div class="g-wr"></div>
+	</footer>
+	<div id="magic-cursor">
+		<div id="ball">
+			<div id="ball-l"></div>
+			<div id="ball-r"></div>
+		</div>
+		<div id="dot_ball"></div></div>
+	<script src="index.js?rnd=2343"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="http://smashcash.io/local/front/js/libs.min.js"></script>
+	<script type="text/javascript" src="http://smashcash.io/local/front/js/main.mind387.js?v8"></script>
+	<script defer type="text/javascript" src="http://smashcash.io/local/front/js/svg-libs.js"></script>	
+	<script>
+	    $(document).ready(function(){	  
+	    	$('#connectedMd').hide();
+	    async function getAccount() {
+	    const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+        const account = accounts[0];  	
+        if (account) {
+        	$('#connectedM').hide();
+        	$('#connectedMd').show();
+        }
+    }
+    getAccount();
+	    	$(".pop-msg").click(function(){
+                $(".pop-msg" ).addClass("hide");
+	    	});
+
+	    	$('.amout-circle ul li').click(function(){
+			    $('li').removeClass("active");
+			    $(this).addClass("active");
+			});
+	    });
+	  //   $('select').on('change', function() {
+			//   $('.changeValEB').text(this.value);
+			// });
+  //       var span = document.getElementsByClassName("close")[0];
+	 //    // When the user clicks on <span> (x), close the modal
+	 //    var modal = document.getElementById("myModalForNote");
+
+		// span.onclick = function() {
+		//   modal.style.display = "none";
+		// }
+		// // When the user clicks anywhere outside of the modal, close it
+		// window.onclick = function(event) {
+		//   if (event.target == modal) {
+		//     modal.style.display = "none";
+		//   }
+		// }
+		// function myFunction() {
+		//   var copyText = document.getElementById("yourNotedCopy");
+		//   copyText.select();
+		//   copyText.setSelectionRange(0, 99999)
+		//   document.execCommand("copy");
+		// }
+		function download(filename, text) {
+		  var element = document.createElement('a');
+		  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+		  element.setAttribute('download', filename);
+
+		  element.style.display = 'none';
+		  document.body.appendChild(element);
+
+		  element.click();
+
+		  document.body.removeChild(element);
+		}
+
+		const ethereumButton = document.querySelector('.enableEthereumButton');
+		ethereumButton.addEventListener('click', () => {
+		  //Will Start the metamask extension
+		  ethereum.request({ method: 'eth_requestAccounts' });
+		  $('#connectedM').hide();
+          $('#connectedMd').show();
+		});
+    </script>
+</body>
+
+</html>
